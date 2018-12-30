@@ -10,8 +10,8 @@ client.on("ready", () => {
 
 
 client.on("message",(message)=>{
-	if(message.content=="Bonjour Le Test ")
-		{message.reply("Bonjour !");}
+	if(message.isMemberMentioned(client))
+		{message.reply("Hey, arrêtez de me mentionner ! Je travaille !");}
 }
 );
 
