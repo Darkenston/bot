@@ -15,10 +15,11 @@ client.on("message",(message)=>{
 }
 );
 var question[8],réponse[8];
-srand(time(0));
+
 	client.on("message",(message)=>{
 		if(message.content=="Pose nous une question")
 		{
+		srand(time(0));
 		question=rand()%9;
 		
 
