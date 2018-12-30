@@ -19,14 +19,14 @@ client.on("message",(message)=>{
 
 var question = ["Histoire: Combien y a t'il eu de Pape du concile de Nicée jusqu'à maintenant ?", "Histoire: Qui a ramené la peste noire en Europe ?",
 
-							"Mythe et Légendes: Qui est le dieu de du vin dans la mythologie grecque ?","Nourriture: Quel est l'aliment le plus mangé au monde  ?",
+							"Mythe et Légendes: Qui est le dieu  du vin dans la mythologie grecque ?","Nourriture: Quel est l'aliment le plus mangé au monde  ?",
 							
-							"Mtyhes et Légendes: Dans la mythologie Egyptienne: Qu'annonce la mort de Seth (Dieu du chaos)?","Jeux vidéos: Quelle héros de Darksider n'a t'on pas encore jouer ?(Nom Anglais) ",
+							"Mtyhes et Légendes: Dans la mythologie Egyptienne: Qu'annonce la mort de Seth ?","Jeux vidéos: Quelle héros de Darksider n'a t'on pas encore jouer ?(Nom Anglais) ",
 							
 							"Jeux vidéos: Qui est la première personne a avoir affronté la légion en Azeroth ? (World of Warcraft) ","Jeux vidéos: Quel est le nom de l'antagoniste d'Assassin's creed 1 ? "];
 
 
-var reponses=["266","Les Mongoles","Dionysos","Les Frites","Le Jour","Strife","Aegwynn","Al Mualim"];	
+var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwynn","Al Mualim"];	
 
 			var questionChoosed = "";
 			var reponseChoosed="";
