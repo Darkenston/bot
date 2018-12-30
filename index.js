@@ -32,13 +32,15 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 			var reponseChoosed="";
 
 function selectQuestion() {
-				var numberQuestion=getRandomInt(question.length-1);
-				questionChoosed= question[numberQuestion+1];
-				reponseChoosed=reponses[numberQuestion+1];
+				var numberQuestion=getRandomIntInclusive(question.length-1);
+				questionChoosed= question[numberQuestion];
+				reponseChoosed=reponses[numberQuestion];
 				}
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+function getRandomIntInclusive(min=1, max=8) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min +1)) + min;
 }
 
 client.on("message",(message)=>{
