@@ -10,8 +10,8 @@ client.on("ready", () => {
 
 
 client.on("message",(message)=>{
-	if(message.content=="Bienvenue ")
-		{message.reply("Bienvenue !");}
+	if(message.content=="Bonjour Le Test ")
+		{message.reply("Bonjour !");}
 }
 );
 
