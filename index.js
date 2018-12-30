@@ -10,7 +10,7 @@ client.on("ready", () => {
 
 
 client.on("message",(message)=>{
-	if(message.isMemberMentioned(client))
+	if(message.isMemberMentioned(client.user))
 		{message.reply("Hey, arrêtez de me mentionner ! Je travaille !");}
 }
 );
