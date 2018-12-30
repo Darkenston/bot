@@ -10,8 +10,8 @@ client.on("ready", () => {
 
 
 client.on("message",(message)=>{
-	if(message.content=="Le Test")
-		{message.reply("Salut, c'est moi !");}
+	if(message.content=="Bienvenue ")
+		{message.reply("Bienvenue !");}
 }
 );
 
@@ -43,6 +43,6 @@ client.on("message",(message)=>{
 			selectQuestion();
 			
 			}
-			
+
 	}
 	);		
