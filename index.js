@@ -37,6 +37,10 @@ function selectQuestion() {
 				reponseChoosed=reponses[numberQuestion];
 				}
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 client.on("message",(message)=>{
 		if(message.content=="Pose nous une question")
 		{
