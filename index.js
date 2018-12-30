@@ -33,7 +33,7 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 
 function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
-				questionChoosed= question[numberQuestion];
+				questionChoosed= question[numberQuestion-2];
 				reponseChoosed=reponses[numberQuestion];
 				}
 
@@ -42,7 +42,7 @@ function getRandomInt(max) {
 }
 
 client.on("message",(message)=>{
-		if(message.content=="Pose nous une question")
+if(message.content=="Pose nous une question"||message.content=="pose nous une question"||message.content=="pose nou une question"||message.content=="pose nous 1 question")
 		{
 			selectQuestion();
 			message.reply(questionChoosed);
