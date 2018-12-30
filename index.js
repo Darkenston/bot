@@ -41,7 +41,12 @@ client.on("message",(message)=>{
 		if(message.content=="Pose nous une question")
 		{
 			selectQuestion();
+			message.reply(selectQuestion());
 			
+			}
+			if(message.content==reponseChoosed)
+			{
+				message.reply("Felicitations, tu as trouvé la bonne réponse !");
 			}
 
 	}
