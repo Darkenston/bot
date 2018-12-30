@@ -32,7 +32,7 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 			var reponseChoosed="";
 
 function selectQuestion() {
-				var numberQuestion=getRandomIntInclusive(question.length-1);
+				var numberQuestion=getRandomIntInclusive(question.length);
 				questionChoosed= question[numberQuestion];
 				reponseChoosed=reponses[numberQuestion];
 				}
