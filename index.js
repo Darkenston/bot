@@ -32,12 +32,12 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 			var reponseChoosed="";
 
 function selectQuestion() {
-				var numberQuestion=getRandomIntInclusive(question.length);
+				var numberQuestion=getRandomIntInclusive(question.length-1);
 				questionChoosed= question[numberQuestion];
 				reponseChoosed=reponses[numberQuestion];
 				}
 
-function getRandomIntInclusive(min=1, max=8) {
+function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min +1)) + min;
