@@ -45,7 +45,7 @@ client.on("message",(message)=>{
 		if(message.content=="Pose nous une question")
 		{
 			selectQuestion();
-			message.reply(selectQuestion());
+			message.reply(questionChoosed);
 			
 			}
 			if(message.content==reponseChoosed)
