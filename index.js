@@ -42,10 +42,8 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 
 function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
-				var numberQuestion2=getRandomInt(question.length-1);
-				 numberQuestionFinal=(numberQuestion+numberQuestion2)/2;
-				questionChoosed= question[numberQuestionFinal];
-				reponseChoosed=reponses[numberQuestionFinal];
+				questionChoosed= question[numberQuestion];
+				reponseChoosed=reponses[numberQuestion];
 				}
 
 function getRandomInt(max) {
