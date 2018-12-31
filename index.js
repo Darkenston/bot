@@ -8,6 +8,10 @@ client.on("ready", () => {
 }
 );
 
+client.on("UserConnection",(UserConnection)=>{
+		if(client.user)
+})
+
 
 client.on("message",(message)=>{
 	if(message.isMemberMentioned(client.user))
@@ -32,19 +36,17 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 			var reponseChoosed="";
 
 function selectQuestion() {
-				var numberQuestion=getRandomIntInclusive(question.length-1);
-				questionChoosed= question[numberQuestion];
-				reponseChoosed=reponses[numberQuestion];
+				var numberQuestion=getRandomInt(question.length-1);
+				questionChoosed= question[numberQuestion+1];
+				reponseChoosed=reponses[numberQuestion+1];
 				}
 
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min +1)) + min;
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
 }
 
 client.on("message",(message)=>{
-if(message.content=="Pose nous une question"||message.content=="pose nous une question"||message.content=="pose nou une question"||message.content=="pose nous 1 question")
+if(message.content=="!quizz")
 		{
 			selectQuestion();
 			message.reply(questionChoosed);
