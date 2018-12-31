@@ -69,7 +69,7 @@ if(message.content=="!quizz")
 
 				if(message.content=="!answer")
 				{
-					var chaine1="La réponse était:";
+					var chaine1="La réponse était: ";
 					var chaine2=reponseChoosed;
 					var chaine3=chaine1+chaine2;
 					message.reply(chaine3);
