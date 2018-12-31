@@ -8,9 +8,6 @@ client.on("ready", () => {
 }
 );
 
-client.on("UserConnection",(UserConnection)=>{
-		if(client.user)
-})
 
 
 client.on("message",(message)=>{
