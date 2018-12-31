@@ -70,7 +70,7 @@ if(message.content=="!quizz")
 				if(message.content=="!answer")
 				{
 					
-					message.reply("La réponse était:",reponseChoosed)
+					message.reply("La réponse était:","",reponseChoosed);
 					
 				}
 
