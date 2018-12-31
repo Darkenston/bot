@@ -63,16 +63,19 @@ if(message.content=="!quizz")
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");
 			}
 
-				function miseEnAttente()
-			
+				if(message.content!=reponseChoosed)
 				{
-					setTimeOut(donnerLaReponse, 6000);
-				}
+					function miseEnAttente()
+				
+					{
+						setTimeOut(donnerLaReponse, 6000);
+					}
 
-				function donnerLaReponse()
-				{
+					function donnerLaReponse()
+					{
 
-					message.reply("C'était ça la réponse:",reponseChoosed);
+						message.reply("C'était ça la réponse:",reponseChoosed);
+					}
 				}
 
 			
