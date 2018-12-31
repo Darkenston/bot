@@ -46,9 +46,27 @@ function selectQuestion() {
 				reponseChoosed=reponses[numberQuestion];
 				}
 
+
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
+
+
+function donnerLaReponse()
+					{
+
+						message.reply("C'était ça la réponse:",reponseChoosed);
+					}
+
+
+					function miseEnAttente()
+				
+					{
+						setTimeOut(donnerLaReponse, 6000);
+					}
+
+
 
 client.on("message",(message)=>{
 if(message.content=="!quizz")
@@ -65,17 +83,9 @@ if(message.content=="!quizz")
 
 				if(message.content!=reponseChoosed)
 				{
-					function miseEnAttente()
-				
-					{
-						setTimeOut(donnerLaReponse, 6000);
-					}
-
-					function donnerLaReponse()
-					{
-
-						message.reply("C'était ça la réponse:",reponseChoosed);
-					}
+					
+					miseEnAttente();
+					
 				}
 
 			
