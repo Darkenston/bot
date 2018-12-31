@@ -45,14 +45,14 @@ function selectQuestion() {
 					questionChoosed= question[numberQuestion];
 					reponseChoosed=reponses[numberQuestion];
 					
-				}
-				
 				var questionPrécédentes=[questionChoosed];
 				if(questionChoosed==questionPrécédentes)
 				{
 					questionChoosed=question[numberQuestion+1];
 					reponseChoosed=reponses[numberQuestion+1];
 				}
+				}
+				
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
