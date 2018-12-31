@@ -62,8 +62,7 @@ if(message.content=="!quizz")
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");
 			}
-			else 
-			{
+
 				function miseEnAttente()
 			
 				{
@@ -76,7 +75,7 @@ if(message.content=="!quizz")
 					message.reply("C'était ça la réponse:",reponseChoosed);
 				}
 
-			}
+			
 
 	}
 	);		
