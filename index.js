@@ -57,9 +57,25 @@ if(message.content=="!quizz")
 			message.reply(questionChoosed);
 			
 			}
+
 			if(message.content==reponseChoosed)
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");
+			}
+			else 
+			{
+				function miseEnAttente()
+			
+				{
+					setTimeOut(donnerLaReponse, 6000);
+				}
+
+				function donnerLaReponse()
+				{
+
+					message.reply("C'était ça la réponse:",reponseChoosed);
+				}
+
 			}
 
 	}
