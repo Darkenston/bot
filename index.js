@@ -8,6 +8,14 @@ client.on("ready", () => {
 }
 );
 
+client.on("UserConnection",(UserConnection)=>{
+		client.id;
+		if(client.user==client.id)
+		{
+			message.reply("Bienvenue !")
+		}
+}
+);
 
 
 client.on("message",(message)=>{
