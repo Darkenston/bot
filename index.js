@@ -53,20 +53,6 @@ function getRandomInt(max) {
 }
 
 
-function donnerLaReponse()
-					{
-
-						message.reply("C'était ça la réponse:",reponseChoosed);
-					}
-
-
-					function miseEnAttente()
-				
-					{
-						setTimeOut(donnerLaReponse, 6000);
-					}
-
-
 
 client.on("message",(message)=>{
 if(message.content=="!quizz")
@@ -81,10 +67,10 @@ if(message.content=="!quizz")
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");
 			}
 
-				if(message.content!=reponseChoosed)
+				if(message.content=="!answer")
 				{
 					
-					miseEnAttente();
+					message.reply("La réponse était:",reponseChoosed)
 					
 				}
 
