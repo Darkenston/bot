@@ -51,6 +51,7 @@ function selectQuestion() {
 				if(questionChoosed==questionPrécédentes)
 				{
 					questionChoosed=question[numberQuestion+1];
+					reponseChoosed=reponses[numberQuestion+1];
 				}
 
 function getRandomInt(max) {
