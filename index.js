@@ -44,10 +44,14 @@ function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
 					questionChoosed= question[numberQuestion];
 					reponseChoosed=reponses[numberQuestion];
+					
 				}
 				
-
-
+				var questionPrécédentes=[questionChoosed];
+				if(questionChoosed==questionPrécédentes)
+				{
+					questionChoosed=question[numberQuestion+1];
+				}
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -60,6 +64,7 @@ if(message.content=="!quizz")
 		{
 			selectQuestion();
 			message.reply(questionChoosed);
+			
 			
 			}
 
