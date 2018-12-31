@@ -43,7 +43,7 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
 				var numberQuestion2=getRandomInt(question.length-1);
-				var numberQuestionFinal=(numberQuestion+numberQuestion2)/2;
+				 numberQuestionFinal=(numberQuestion+numberQuestion2)/2;
 				questionChoosed= question[numberQuestionFinal];
 				reponseChoosed=reponses[numberQuestionFinal];
 				}
