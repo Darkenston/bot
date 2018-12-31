@@ -42,13 +42,10 @@ var reponses=["266","Les Mongoles","Dionysos","Le Riz","Le Jour","Strife","Aegwy
 
 function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
-				var tableauxNbAleatoire=[numberQuestion-1];
-				if(numberQuestion==tableauxNbAleatoire)
-				{
-					questionChoosed= question[numberQuestion+1];
-					reponseChoosed=reponses[numberQuestion+1];
+					questionChoosed= question[numberQuestion];
+					reponseChoosed=reponses[numberQuestion];
 				}
-				}
+				
 
 
 
