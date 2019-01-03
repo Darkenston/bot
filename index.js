@@ -36,7 +36,6 @@ var question = ["Histoire: Combien y a t'il eu de Pape du concile de Nicée jusq
 
 
 			var reponses=["266","mongoles","dionysos","riz","jour","strife","aegwynn","almualim"];
-
 			var questionChoosed = "";
 			var reponseChoosed="";
 
@@ -44,6 +43,8 @@ function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
 					questionChoosed= question[numberQuestion];
 					reponseChoosed=reponses[numberQuestion];
+					var reg=new RegExp(reponseChoosed);
+
 					
 				
 				if(questionChoosed==questionPrécédentes)
@@ -68,7 +69,8 @@ if(message.content=="!quizz")
 			
 			
 			}
-
+			var resultat = reg.test(reponseChoosed);
+			alert(resultat);
 			if(message.content==reponseChoosed)
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");
