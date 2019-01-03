@@ -35,15 +35,15 @@ var question = ["Histoire: Combien y a t'il eu de Pape du concile de Nicée jusq
 							"Jeux vidéos: Qui est la première personne a avoir affronté la légion en Azeroth ? (World of Warcraft) ","Jeux vidéos: Quel est le nom de l'antagoniste d'Assassin's creed 1 ? "];
 
 
-			var reponses=["266","mongoles","dionysos","riz","jour","strife","aegwynn","almualim"];
-			reponses[1]=["mongols","mongoles","mongol"];	
-			reponses[2]=["dionysos","dyonisos","dyonysos","dionisos"];
-			reponses[3]=["Le Riz","le Riz","le riz","riz"];
-			reponses[4]=["Le Jour","Le jour","le jour","jour"];
-			reponses[5]=["Stryfe","Strife","strife","stryfe"];
-			reponses[6]=["Aegwynn","aegwynn","aegwyn","aegwinn","aegwin"];
-			reponses[7]=["Al Mualim","al mualim","almualim"];
-
+			var reponses=[
+			["mongols","mongoles","mongol"],	
+			["dionysos","dyonisos","dyonysos","dionisos"],
+			["Le Riz","le Riz","le riz","riz"],
+			["Le Jour","Le jour","le jour","jour"],
+			["Stryfe","Strife","strife","stryfe"],
+			["Aegwynn","aegwynn","aegwyn","aegwinn","aegwin"],
+			["Al Mualim","al mualim","almualim"],
+							];
 			var questionChoosed = "";
 			var reponseChoosed="";
 
