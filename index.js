@@ -35,15 +35,8 @@ var question = ["Histoire: Combien y a t'il eu de Pape du concile de Nicée jusq
 							"Jeux vidéos: Qui est la première personne a avoir affronté la légion en Azeroth ? (World of Warcraft) ","Jeux vidéos: Quel est le nom de l'antagoniste d'Assassin's creed 1 ? "];
 
 
-			var reponses=[
-			["mongols","mongoles","mongol"],	
-			["dionysos","dyonisos","dyonysos","dionisos"],
-			["Le Riz","le Riz","le riz","riz"],
-			["Le Jour","Le jour","le jour","jour"],
-			["Stryfe","Strife","strife","stryfe"],
-			["Aegwynn","aegwynn","aegwyn","aegwinn","aegwin"],
-			["Al Mualim","al mualim","almualim"],
-							];
+			var reponses=["266","mongoles","dionysos","riz","jour","strife","aegwynn","almualim"];
+
 			var questionChoosed = "";
 			var reponseChoosed="";
 
