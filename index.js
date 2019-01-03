@@ -43,7 +43,7 @@ function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
 					questionChoosed= question[numberQuestion];
 					reponseChoosed=reponses[numberQuestion];
-					var reg=new RegExp(reponseChoosed,"i");
+					
 
 					
 				
@@ -69,15 +69,21 @@ if(message.content=="!quizz")
 			
 			
 			}
+
+
+			var reg=new RegExp(reponseChoosed,"i");
 			var resultat = reg.test(reponseChoosed);
 			alert(resultat);
+			
+
+
 			if(resultat==true)
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");			
 			}
 
 
-			
+
 			if(message.content==reponseChoosed)
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");
