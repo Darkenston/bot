@@ -72,7 +72,7 @@ if(message.content=="!quizz")
 
 
 			var reg=new RegExp(reponseChoosed,"i");
-			var resultat = reg.exec("",.);
+			var resultat = reg.exec("",".");
 			
 
 
