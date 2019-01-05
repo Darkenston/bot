@@ -66,7 +66,6 @@ function getRandomInt(max) {
 function testReponse(){
 
 	var reg=new RegExp(reponseChoosed,"i");
-			var resultat=reg.
 }
 
 client.on("message",(message)=>{
