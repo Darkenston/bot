@@ -77,7 +77,7 @@ if(message.content=="!quizz")
 
 			if(message.content=="!help")
 			{
-				message.reply("!quizz=Demender une question\n!answer=Demender la réponse a la question\n");
+				message.reply("\n!quizz=Demender une question\n!answer=Demender la réponse a la question\n");
 			}
 
 	}
