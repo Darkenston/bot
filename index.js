@@ -8,34 +8,17 @@ client.on("ready", () => {
 }
 );
 
-client.on("UserConnection",(UserConnection)=>{
-		client.id;
-		if(client.user==client.id)
-		{
-			message.reply("Bienvenue !")
-		}
-}
-);
-
-
-client.on("message",(message)=>{
-	if(message.isMemberMentioned(client.user))
-		{message.reply("Hey, arrêtez de me mentionner ! Je travaille !");}
-}
-);
-
-
 
 var question = ["Histoire: Combien y a t'il eu de Pape du concile de Nicée jusqu'à maintenant ?", "Histoire: Qui a ramené la peste noire en Europe ?",
 
 							"Mythes et Légendes: Qui est le dieu  du vin dans la mythologie grecque ?","Nourriture: Quel est l'aliment le plus mangé au monde  ?",
 							
-							"Mythes et Légendes: Dans la mythologie Egyptienne: Qu'annonce la mort de Seth ?","Jeux vidéos: Quelle héros de Darksider n'a t'on pas encore jouer ?(Nom Anglais) ",
+							"Mythes et Légendes: Dans la mythologie Egyptienne: Qu'annonce la mort de Seth ?","Quels furent les derniers mots de Jules César?",
 							
-							"Jeux vidéos: Qui est la première personne a avoir affronté la légion en Azeroth ? (World of Warcraft) ","Jeux vidéos: Quel est le nom de l'antagoniste d'Assassin's creed 1 ? "];
+							"Qui a ecrit le tour du monde en 80 jours?","Jeux vidéos: Quel est le nom de l'antagoniste d'Assassin's creed 1 ? "];
 
 
-			var reponses=["266","mongoles","dionysos","riz","jour","strife","aegwynn","almualim"];
+			var reponses=["266","mongoles","dionysos","riz","jour","tu quoque mi fili","jule verne","almualim"];
 			var questionChoosed = "";
 			var reponseChoosed="";
 
@@ -92,7 +75,10 @@ if(message.content=="!quizz")
 					
 				}
 
-			
+			if(message.content=="!help")
+			{
+				message.reply("!quizz=Demender une question\n!answer=Demender la réponse a la question\n");
+			}
 
 	}
 	);		
