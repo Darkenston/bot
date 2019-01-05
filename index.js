@@ -76,13 +76,12 @@ if(message.content=="!quizz")
 			
 			
 			}
-			var collect=new Discord.MessageCollector(527849317315379201);
 
 
 			var reg=new RegExp(reponseChoosed,"i");
 			
-
-
+			var channel=message.channel(527849317315379201);
+			var collect=message.collected();
 			if(reg==collect)
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse ! :smile: ");			
