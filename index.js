@@ -76,8 +76,7 @@ if(message.content=="!quizz")
 			
 			
 			}
-			var message;
-			var collect=new Discord.MessageCollector(527849317315379201,message.filter(),message.options);
+			var collect=new Discord.MessageCollector(527849317315379201);
 
 
 			var reg=new RegExp(reponseChoosed,"i");
