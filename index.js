@@ -80,8 +80,8 @@ if(message.content=="!quizz")
 
 			var reg=new RegExp(reponseChoosed,"i");
 			
-			var channel=message.channel(527849317315379201);
-			var collect=message.collected();
+			var channel=message.channel;
+			var collect=message.collected;
 			if(reg==collect)
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse ! :smile: ");			
