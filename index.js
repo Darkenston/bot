@@ -75,7 +75,7 @@ if(message.content=="!quizz")
 			
 
 
-			if(/reponseChoosed/i.test(message.content("")))
+			if(/reponseChoosed/i.test(message.content==reponseChoosed))
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");			
 			}
