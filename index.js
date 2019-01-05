@@ -39,6 +39,10 @@ var question = ["Histoire: Combien y a t'il eu de Pape du concile de Nicée jusq
 			var questionChoosed = "";
 			var reponseChoosed="";
 
+
+
+
+
 function selectQuestion() {
 				var numberQuestion=getRandomInt(question.length-1);
 					questionChoosed= question[numberQuestion];
@@ -59,7 +63,11 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
+function testReponse(){
 
+	var reg=new RegExp(reponseChoosed,"i");
+			var resultat=reg.
+}
 
 client.on("message",(message)=>{
 if(message.content=="!quizz")
@@ -70,13 +78,14 @@ if(message.content=="!quizz")
 			
 			}
 
+			var collect=new Discord.MessageCollector(527849317315379201,filter,options);
+
 
 			var reg=new RegExp(reponseChoosed,"i");
-			var resultat=message.user("");
 			
 
 
-			if(resultat==reg)
+			if(reg==collect)
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse ! :smile: ");			
 			}
