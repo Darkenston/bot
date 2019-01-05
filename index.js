@@ -71,22 +71,19 @@ if(message.content=="!quizz")
 			}
 
 
-			
+			var reg=new RegExp(reponseChoosed,"i");
+			var resultat=message.user("");
 			
 
 
-			if(message.content(reponseChoosed))
+			if(resultat==reg)
 			{
-				message.reply("Felicitations, tu as trouvé la bonne réponse !");			
+				message.reply("Felicitations, tu as trouvé la bonne réponse ! :smile: ");			
 			}
-			else {
-
-			}
-
 
 			if(message.content==reponseChoosed)
 			{
-				message.reply("Felicitations, tu as trouvé la bonne réponse !");
+				message.reply("Felicitations, tu as trouvé la bonne réponse ! :smile:");
 			}
 
 				if(message.content=="!answer")
