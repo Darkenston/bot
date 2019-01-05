@@ -71,16 +71,17 @@ if(message.content=="!quizz")
 			}
 
 
-			var reg=/reponseChoosed/i;
-			var resultat = reg.exec();
+			
 			
 
 
-			if(resultat==true)
+			if(/reponseChoosed/i.test(message.content("")))
 			{
 				message.reply("Felicitations, tu as trouvé la bonne réponse !");			
 			}
+			else {
 
+			}
 
 
 			if(message.content==reponseChoosed)
