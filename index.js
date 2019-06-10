@@ -11,7 +11,7 @@ client.on("ready", () => {
 
 var author,experience,message,expLvl;
 var chaine1,chaine2,chaine3;
-
+let User;
 	author=User.username;
 	message=User.lastMessage;
 	if(message)
