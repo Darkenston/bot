@@ -17,12 +17,12 @@ var chaine1,chaine2,chaine3;
 	if(message)
 		{
 			
-			User.experience=experience+5;
+			author.experience=author.experience+5;
 		}
-		if(User.experience=100)
+		if(experience=100)
 		{
-			User.expLvl++;
-			User.experience=0;
+			author.expLvl++;
+			author.experience=0;
 		}
 
 
@@ -31,7 +31,7 @@ var chaine1,chaine2,chaine3;
 	if(message.content=="!rank")
 	{
 		 chaine1="Tu es LvL";
-		 chaine2=User.expLvl;
+		 chaine2=author.expLvl;
 		 chaine3=chaine1+chaine2;
 		 message.reply(chaine3);
 	}
